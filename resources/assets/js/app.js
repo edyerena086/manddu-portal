@@ -17,6 +17,14 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+/**
+ * --------------------------------------------------------------------------
+ * Candidate Components
+ * --------------------------------------------------------------------------
+ */
+Vue.component('candidate-login', require('./components/candidate/account/LoginComponent.vue'));
+Vue.component('candidate-account-create', require('./components/candidate/account/CreateComponent.vue'));
+
 const app = new Vue({
     el: '#app'
 });

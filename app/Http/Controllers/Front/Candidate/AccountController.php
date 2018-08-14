@@ -11,6 +11,11 @@ use ReclutaTI\Http\Requests\Front\Candidate\Account\StoreRequest;
 
 class AccountController extends Controller
 {
+    public function __construct()
+    {
+        return $this->middleware('guest')->except(['logout']);
+    }
+
 	/**
 	 * [index description]
 	 * @return [type] [description]
